@@ -286,6 +286,12 @@ public with sharing class ClassesObjectsMethods {
             this.author = author;
             this.pages = pages;
         }
+        public Book(String title, String author) {
+            // Initialize the title and author
+            this.title = title;
+            this.author = author;
+            this.pages = 0;
+        }
     
         // Method that returns the details of the book
         public String getBookDetails() {
@@ -323,8 +329,8 @@ public with sharing class ClassesObjectsMethods {
         // Create a list of books
         List<Book> bookList = new List<Book>();
         // Update the title and author of myBook1
-        myBook1.title = 'Africa to America';
-        myBook1.author = 'Arsene MK';
+        myBook1.title = 'Harry Potter and the Chamber of Secrets';
+        myBook1.author = 'J.K. Rowling';
         // Update the pages for myBook1 to 352
         myBook1.pages = 352;
 
